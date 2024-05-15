@@ -10,6 +10,8 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt-get update
 sudo apt-get install jenkins -y
+sudo systemctl start jenkins
+sudo systemctl status jenkins
 ```
 
 2. give executble permission and run the script
